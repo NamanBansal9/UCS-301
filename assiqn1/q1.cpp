@@ -1,7 +1,6 @@
 #include<iostream>
 using namespace std;
 
-
 int arr[100];
 int size = 0;
 int run = 1;
@@ -65,10 +64,6 @@ int main(){
         default:
             break;
         }
-
-
-
-// run = 0;
     }
     return 0;
 }
