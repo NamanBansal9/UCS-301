@@ -16,13 +16,13 @@ string str;
 void conca(void);
 void rev(void);
 void vowel(void);
-
+void sort(void);
 void uplo(void);
 int main(){
     conca();
     rev();
     vowel();
-
+    sort();
     uplo();
     return 0;
 }
@@ -52,7 +52,17 @@ void vowel(void){
     cout << "String without vowels :" << non_vowel << endl;
 
 }
-
+void sort(void){
+    char temp;
+    for(int i=0;i<str.length;i++){
+        for(int j =0;j<(str.length - i);j++){
+            if(str1[j]>str1[j+1]){
+                temp = str1[j];
+                str1[j] = str1[j+1];
+                str1[j+1] = temp;
+            }}}
+cout<<str1<<endl;
+}
 void uplo(void){
     char p;
     cout<<"enter the uppercase letter : "<<endl;
