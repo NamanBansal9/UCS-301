@@ -53,15 +53,18 @@ void vowel(void){
 
 }
 void sort(void){
+    string str = "kali";
     char temp;
-    for(int i=0;i<str.length;i++){
-        for(int j =0;j<(str.length - i);j++){
-            if(str1[j]>str1[j+1]){
-                temp = str1[j];
-                str1[j] = str1[j+1];
-                str1[j+1] = temp;
-            }}}
-cout<<str1<<endl;
+    for(int i=0;i<str.length()-1;i++){
+        for(int j=0;j<(str.length()-1-i);j++){
+            if(str[j+1]<str[j]){
+                temp = str[j];
+                str[j] = str[j+1];
+                str[j+1] = temp;
+            }
+        }
+    }
+        cout<<str<<endl;  
 }
 void uplo(void){
     char p;
